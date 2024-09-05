@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="nameLabel" prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/profile.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.toysocialnetworkgui.ProfileController">
+   <children>
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="153.0" prefHeight="158.0" prefWidth="322.0">
+        <columns>
+          <TableColumn fx:id="tableColumnFrom" prefWidth="112.00000190734863" text="From" />
+          <TableColumn fx:id="tableColumnLocation" minWidth="0.6666259765625" prefWidth="103.99999237060547" text="Location" />
+            <TableColumn fx:id="tableColumnDate" prefWidth="109.33335876464844" text="Date" />
+        </columns>
+      </TableView>
+      <Button fx:id="acceptButton" layoutX="21.0" layoutY="387.0" mnemonicParsing="false" onAction="#clickOnAccept" prefHeight="25.0" prefWidth="149.0" text="Accept" />
+      <Button fx:id="declineButton" layoutX="185.0" layoutY="387.0" mnemonicParsing="false" onAction="#clickOnDecline" prefHeight="25.0" prefWidth="55.0" text="Decline" />
+      <ListView fx:id="listView" layoutX="377.0" layoutY="252.0" prefHeight="136.0" prefWidth="200.0" />
+      <ImageView fitHeight="78.0" fitWidth="64.0" layoutX="121.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/choosing2.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="85.0" layoutY="59.0" prefHeight="64.0" prefWidth="200.0">
+         <children>
+            <Line endX="100.0" layoutX="101.0" layoutY="51.0" startX="-100.0" />
+            <Label layoutX="29.0" layoutY="22.0" text="Friendship Requests" textFill="#6b6b9f">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Line endX="100.0" layoutX="100.0" layoutY="14.0" startX="-100.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="377.0" layoutY="179.0" prefHeight="64.0" prefWidth="200.0">
+         <children>
+            <Line endX="100.0" layoutX="101.0" layoutY="61.0" startX="-100.0" />
+            <ImageView fitHeight="35.0" fitWidth="28.0" layoutX="11.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/bell2.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="39.0" layoutY="25.0" prefHeight="21.0" prefWidth="153.0" text="Notifications" textFill="#6b6b9f">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Line endX="100.0" layoutX="100.0" layoutY="14.0" startX="-100.0" />
+         </children>
+      </Pane>
+      <ImageView fitHeight="106.0" fitWidth="115.0" layoutX="413.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/advertisement2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

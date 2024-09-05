@@ -1,0 +1,52 @@
+/*.linear-grad
+{
+    -fx-background-color: linear-gradient(to bottom left, #6B6B9F,#A8C0FF);
+}
+*/
+
+.linear-grad
+{
+    -fx-background-color: "#6B6B9F";
+}
+
+.LoginButton
+{
+    -fx-background-color: #6B6B9F;
+}
+
+.LoginButton:hover
+{
+    -fx-text-fill: #cdcdec;
+}
+
+.LoginButton:pressed
+{
+    -fx-text-fill: #80AFF5;
+}
+
+
+.submitButton
+{
+    -fx-background-color: #dddce3;
+    -fx-background-radius: 5;
+    -fx-border-color: #6f4cbb;
+    -fx-text-fill: #6B6B9F;
+    -fx-border-radius: 5;
+
+}
+
+.submitButton:hover
+{
+    -fx-text-fill: #9999d7;
+}
+
+.submitButton:pressed
+{
+    -fx-text-fill: #9999d7;
+    -fx-background-radius: 20;
+}
+
+#painRight{
+    -fx-background-image: url("fundal2.png");
+}
+

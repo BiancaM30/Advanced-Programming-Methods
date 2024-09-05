@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="mainAnchor" prefHeight="400.0" prefWidth="1000.0" stylesheets="@../css/account.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.toysocialnetworkgui.AccountController">
+   <children>
+      <SplitPane dividerPositions="0.29797979797979796" layoutX="-1.0" maxHeight="-Infinity" prefHeight="600.0" prefWidth="1000.0" stylesheets="@../css/account.css">
+        <items>
+          <AnchorPane fx:id="anchorLeft" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="175.0" stylesheets="@../css/account.css">
+               <children>
+                  <VBox layoutY="137.0" prefHeight="260.0" prefWidth="175.0">
+                     <children>
+                        <Button mnemonicParsing="false" text="Logged in as" />
+                        <Button fx:id="NameButton" mnemonicParsing="false" />
+                        <Button mnemonicParsing="false" />
+                        <Button fx:id="profileButton" mnemonicParsing="false" onAction="#clickOnProfile" prefHeight="44.0" prefWidth="175.0" text="News" />
+                        <Button fx:id="friendsButton" mnemonicParsing="false" onAction="#clickOnFriends" prefHeight="45.0" prefWidth="175.0" text="Friends" />
+                        <Button fx:id="searchButton" mnemonicParsing="false" onAction="#clickOnSearch" prefHeight="39.0" prefWidth="175.0" text="Search" />
+                         <Button fx:id="chatButton" mnemonicParsing="false" onAction="#clickOnChat" text="Chat" />
+                         <Button fx:id="chatGroupButton" mnemonicParsing="false" onAction="#clickOnChatGroup" text="ChatGroup" />
+                        <Button fx:id="eventButton" mnemonicParsing="false" onAction="#clickOnEvent" text="Events" />
+                        <Button mnemonicParsing="false" onAction="#clickOnGeneratorPDF" text="Raport" />
+                         <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#clickOnLogout" text="Log out" />
+
+                     </children>
+                  </VBox>
+                  <ImageView fitHeight="132.0" fitWidth="149.0" layoutX="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logo.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+          <AnchorPane id="anchorRight" fx:id="anchorRight" minHeight="0.0" minWidth="0.0" stylesheets="@../css/account.css" />
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

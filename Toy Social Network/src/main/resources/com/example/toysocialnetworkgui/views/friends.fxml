@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchore" prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/friends.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.toysocialnetworkgui.FriendsController">
+   <children>
+      <Button fx:id="deleteFriendButton" layoutX="202.0" layoutY="473.0" mnemonicParsing="false" onAction="#clickedOnDelete" text="Delete Friend" />
+      <TextField fx:id="searchFriend" layoutX="170.0" layoutY="164.0" prefHeight="25.0" prefWidth="268.0" promptText="searchfriend" />
+      <Pagination fx:id="page" layoutX="68.0" layoutY="251.0" maxPageIndicatorCount="3" prefHeight="201.0" prefWidth="471.0" />
+      <TableView fx:id="tableView" layoutX="68.0" layoutY="227.0" prefHeight="152.0" prefWidth="471.0">
+        <columns>
+          <TableColumn fx:id="tableColumnFirstName" prefWidth="145.0" text="Firstname" />
+          <TableColumn fx:id="tableColumnLastName" prefWidth="145.0" text="Lastname" />
+            <TableColumn fx:id="tableColumnLocation" prefWidth="143.99996948242188" text="Location" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="115.0" fitWidth="117.0" layoutX="247.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/global-connection2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,13 @@
+#anchorMain{
+    -fx-background-image: url("fundal2.png");
+
+}
+
+.button{
+    -fx-pref-width: 110;
+    -fx-pref-height: 35;
+    -fx-background-color: #6B6B9F;
+    -fx-text-fill: #f8f3ee;
+    -fx-font-size: 14;
+    -fx-background-radius: 5,5,4;
+}

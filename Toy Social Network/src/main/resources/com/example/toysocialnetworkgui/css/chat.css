@@ -1,0 +1,82 @@
+
+.button {
+    -fx-pref-width: 140;
+    -fx-pref-height: 30;
+    -fx-background-color: #6B6B9F;
+    -fx-text-fill: #f8f3ee;
+    -fx-font-size: 14;
+    -fx-background-radius: 5, 5, 4;
+}
+
+#sendButton {
+    -fx-pref-width: 100;
+    -fx-pref-height: 30;
+    -fx-background-color: #6B6B9F;
+    -fx-text-fill: #f8f3ee;
+    -fx-font-size: 14;
+    -fx-background-radius: 5, 5, 4;
+}
+
+#replyButton {
+    -fx-pref-width: 100;
+    -fx-pref-height: 30;
+    -fx-background-color: #6B6B9F;
+    -fx-text-fill: #f8f3ee;
+    -fx-font-size: 14;
+    -fx-background-radius: 5, 5, 4;
+}
+
+.table-view {
+    -fx-background-color: transparent;
+    -fx-text-background-color: black;
+    -fx-font-family: Calibri;
+    -fx-font-size: 13px;
+}
+
+.table-view .column-header {
+    -fx-text-background-color: black;
+
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+
+.table-view .corner {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #ACA6AE;
+}
+
+.table-view .table-cell {
+    -fx-border-color: transparent;
+    -fx-padding: 2 0 2 10px;
+}
+
+.table-row-cell:hover {
+    -fx-text-background-color: grey;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #00000011;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.table-row-cell:even {
+    -fx-background-color: #ffffff11;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #00000066;
+    -fx-text-background-color: white;
+    -fx-font-weight: bold;
+}
